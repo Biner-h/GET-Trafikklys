@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafikklys</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="lys()">
+    <h1 class="hovedtittel">Trafikklys</h1>
+    <br>
+    <div id="trafikklys">
+        <div id="rød" class="rødSirkel"></div>
+        <div id="gul" class="orangeSirkel"></div>
+        <div id="grønn" class="grønnSirkel"></div>
+    </div>
+    <br>
+    <div class="buttonContainer">
+        <button class="rød Knapp" onclick="changeColor('rød')">⚫</button>
+        <button class="rødOrange Knapp" onclick="changeColor('orange')">⚫</button>
+        <button class="grønn Knapp" onclick="changeColor('grønn')">⚫</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
