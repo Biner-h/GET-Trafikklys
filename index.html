@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="lys()">
+<body>
     <h1 class="hovedtittel">Trafikklys</h1>
     <br>
-    <div id="trafikklys">
+    <div id="trafikkLys">
         <div id="rød" class="rødSirkel"></div>
-        <div id="gul" class="orangeSirkel"></div>
+        <div id="orange" class="orangeSirkel"></div>
         <div id="grønn" class="grønnSirkel"></div>
     </div>
     <br>
     <div class="buttonContainer">
-        <button class="rød Knapp" onclick="changeColor('rød')">⚫</button>
-        <button class="rødOrange Knapp" onclick="changeColor('orange')">⚫</button>
-        <button class="grønn Knapp" onclick="changeColor('grønn')">⚫</button>
+        <button id="rødKnapp" class="rød Knapp">⚫</button>
+        <button id="orangeKnapp" class="rødOrange Knapp">⚫</button>
+        <button id="grønnKnapp" class="grønn Knapp">⚫</button>
+        <button id="autoKnapp" class="auto" onclick="changeColor()">AUTO</button>
+        <button id="allOff" class="off" onclick="allOff()">OFF</button>
     </div>
     
     <script src="script.js"></script>
